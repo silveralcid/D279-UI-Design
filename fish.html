@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Fish - Paradigm Pet Professionals</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        header {
+            background-color: #f8f8f8;
+            padding: 10px 0;
+            text-align: center;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        nav.container-fluid {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+        }
+
+        nav.container-fluid ul:first-child li strong {
+            color: #003366;
+            /* Dark blue color */
+            font-size: 1.25rem;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+
+        h2,
+        h3 {
+            margin-bottom: 10px;
+        }
+
+        h3 {
+            color: #ffffff;
+            /* White color for section headers */
+            background-color: #003366;
+            /* Dark blue background for contrast */
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        p {
+            margin-bottom: 15px;
+            line-height: 1.5;
+        }
+
+        footer {
+            background-color: #f8f8f8;
+            text-align: center;
+            padding: 10px 0;
+            border-top: 1px solid #e0e0e0;
+            font-size: 0.875rem;
+            position: relative;
+        }
+
+        footer p,
+        footer small {
+            margin: 5px 0;
+        }
+
+        .content-section {
+            margin-bottom: 30px;
+        }
+
+        .image-placeholder {
+            width: 100%;
+            height: auto;
+            margin-bottom: 20px;
+        }
+
+        .dropdown-menu {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+
+        nav ul li:hover .dropdown-menu {
+            display: block;
+        }
+
+        .dropdown-menu a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .dropdown-menu a:hover {
+            background-color: #f1f1f1;
+        }
+
+        .highlighted {
+            color: #ff0000;
+            /* Highlighted color for active page */
+        }
+
+        .microinteraction {
+            transition: background-color 0.3s ease;
+        }
+
+        .microinteraction:hover {
+            background-color: #f1f1f1;
+        }
+
+        .card {
+            background-color: #e8e8e8;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 15px;
+            margin-bottom: 20px;
+        }
+
+        .card img {
+            border-radius: 5px;
+        }
+
+        .card ul li {
+            color: #333333;
+            /* Darker text color for better readability */
+        }
+
+        .btn-outline-primary a {
+            text-decoration: none;
+            color: #007bff;
+        }
+
+        .btn-outline-primary a:hover {
+            color: #0056b3;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="container-fluid">
+            <ul>
+                <li><strong class="highlighted">Paradigm Pet Professionals</strong></li>
+            </ul>
+            <ul>
+                <li><a href="index.html" class="microinteraction">Home</a></li>
+                <li><a href="#" class="microinteraction">Pet Information</a>
+                    <div class="dropdown-menu">
+                        <a href="dogs.html">Dogs</a>
+                        <a href="cats.html">Cats</a>
+                        <a href="fish.html">Fish</a>
+                    </div>
+                </li>
+                <li><a href="contact.html" class="microinteraction">Schedule an Appointment</a></li>
+                <li><a href="about.html" class="microinteraction">About Us</a></li>
+                <li><a href="#" class="microinteraction" role="button">Search</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <h2>Fish Care</h2>
+        <p>Having a fish tank can have calming effects, but it's important to ensure the environment is safe for your
+            fish. Regular water testing is essential to maintain a toxin-free environment. Below are some tips for
+            keeping your fish healthy and happy.</p>
+        <img src="images/fish.jpg" alt="Freshwater fish in an aquarium" class="image-placeholder">
+
+
+        <div class="card">
+            <h3>Top Pet Care Tips for Fish</h3>
+            <ul>
+                <li><strong>Water Testing:</strong> Invest in a water testing kit and perform weekly chemical tests on
+                    tank water.</li>
+                <li><strong>Chemical Range:</strong> Understand the specific chemical range requirements for freshwater
+                    versus saltwater fish.</li>
+                <li><strong>Compatibility:</strong> Consult with a "Pexpert" to ensure compatibility among fish in your
+                    tank.</li>
+                <li><strong>External Resources:</strong> Access external resources for more information on making tap
+                    water safe for fish.</li>
+            </ul>
+        </div>
+
+        <div class="content-section">
+            <h3>Freshwater Fish</h3>
+            <p>For freshwater fish, it's important to maintain general water chemistry within specific parameters. Ideal
+                pH levels should be monitored, and harmful substances like ammonia, nitrates, and nitrites should be
+                kept within safe limits.</p>
+        </div>
+
+        <div class="content-section">
+            <h3>Saltwater Fish</h3>
+            <p>Saltwater fish require specific salinity levels and pH balances to thrive. Managing ammonia, nitrates,
+                and nitrites is also critical to prevent dangerous conditions in a saltwater tank. Regular monitoring is
+                essential to maintain a healthy environment.</p>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2024 Paradigm Pet Professionals.</p>
+        <small><a href="#">Privacy Policy</a> • <a href="contact.html">Contact Us</a></small>
+    </footer>
+</body>
+
+</html>

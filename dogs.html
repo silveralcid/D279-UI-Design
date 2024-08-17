@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Dogs - Paradigm Pet Professionals</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        header {
+            background-color: #f8f8f8;
+            padding: 10px 0;
+            text-align: center;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        nav.container-fluid {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+        }
+
+        nav.container-fluid ul:first-child li strong {
+            color: #003366;
+            /* Dark blue color */
+            font-size: 1.25rem;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+
+        h2,
+        h3 {
+            margin-bottom: 10px;
+        }
+
+        h3 {
+            color: #ffffff;
+            /* White color for section headers */
+            background-color: #003366;
+            /* Dark blue background for contrast */
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        p {
+            margin-bottom: 15px;
+            line-height: 1.5;
+        }
+
+        footer {
+            background-color: #f8f8f8;
+            text-align: center;
+            padding: 10px 0;
+            border-top: 1px solid #e0e0e0;
+            font-size: 0.875rem;
+            position: relative;
+        }
+
+        footer p,
+        footer small {
+            margin: 5px 0;
+        }
+
+        .content-section {
+            margin-bottom: 30px;
+        }
+
+        .image-placeholder {
+            width: 100%;
+            height: auto;
+            margin-bottom: 20px;
+        }
+
+        .dropdown-menu {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+
+        nav ul li:hover .dropdown-menu {
+            display: block;
+        }
+
+        .dropdown-menu a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .dropdown-menu a:hover {
+            background-color: #f1f1f1;
+        }
+
+        .highlighted {
+            color: #ff0000;
+            /* Highlighted color for active page */
+        }
+
+        .microinteraction {
+            transition: background-color 0.3s ease;
+        }
+
+        .microinteraction:hover {
+            background-color: #f1f1f1;
+        }
+
+        .card {
+            background-color: #e8e8e8;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 15px;
+            margin-bottom: 20px;
+        }
+
+        .card img {
+            border-radius: 5px;
+        }
+
+        .card ul li {
+            color: #333333;
+            /* Darker text color for better readability */
+        }
+
+        .btn-outline-primary a {
+            text-decoration: none;
+            color: #007bff;
+        }
+
+        .btn-outline-primary a:hover {
+            color: #0056b3;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="container-fluid">
+            <ul>
+                <li><strong class="highlighted">Paradigm Pet Professionals</strong></li>
+            </ul>
+            <ul>
+                <li><a href="index.html" class="microinteraction">Home</a></li>
+                <li><a href="#" class="microinteraction">Pet Information</a>
+                    <div class="dropdown-menu">
+                        <a href="dogs.html">Dogs</a>
+                        <a href="cats.html">Cats</a>
+                        <a href="fish.html">Fish</a>
+                    </div>
+                </li>
+                <li><a href="contact.html" class="microinteraction">Schedule an Appointment</a></li>
+                <li><a href="about.html" class="microinteraction">About Us</a></li>
+                <li><a href="#" class="microinteraction" role="button">Search</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <h2>Dog Care</h2>
+        <p>Owning a dog has numerous social and health benefits, including better blood pressure and lipid profiles.
+            Proper care, feeding, and exercise routines are essential to ensuring your dog's health and happiness. Below
+            are some of our top tips for dog care.</p>
+        <img src="images/dog.jpg" alt="Home Image" class="image-placeholder" />
+
+
+        <div class="card">
+            <h3>Top Pet Care Tips for Dogs</h3>
+            <ul>
+                <li><strong>Vaccinations:</strong> Ensure your dog receives all necessary vaccinations, including any
+                    additional ones recommended by your veterinarian based on your dog's environment.</li>
+                <li><strong>Grooming:</strong> Regular grooming is important to maintain your dog’s health. This
+                    includes brushing, bathing, and checking for insects.</li>
+                <li><strong>Diet:</strong> As dogs age, their dietary needs change. Make sure to adjust their diet
+                    accordingly and ensure they stay hydrated.</li>
+                <li><strong>Exercise:</strong> Regular exercise is essential for your dog’s physical and mental health.
+                    Depending on the breed and size, aim for 30-120 minutes of exercise daily.</li>
+            </ul>
+        </div>
+
+        <div class="content-section">
+            <h3>Diet and Exercise</h3>
+            <p>Feeding your dog properly is crucial for their health. Adjust their diet based on age, breed, and
+                activity level. Hydration is equally important, as dehydration can lead to serious health issues.
+                Regular exercise helps maintain healthy organ function, and the duration varies depending on your dog’s
+                breed and size.</p>
+        </div>
+
+        <div class="content-section">
+            <h3>Grooming and Handling</h3>
+            <p>Regular grooming is essential for your dog’s health. This includes brushing their fur, bathing them, and
+                checking for ticks and other insects. Proper handling techniques are also important, especially for
+                larger dogs, to ensure safety for both the dog and the handler.</p>
+        </div>
+
+        <div class="content-section">
+            <h3>Vaccinations and Medications</h3>
+            <p>Vaccinations are critical to preventing disease in your dog. Consult with your veterinarian to determine
+                which core vaccines are necessary and whether any additional vaccines might be required based on your
+                dog’s lifestyle and environment. Regular check-ups are also important to keep your dog in good health.
+            </p>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2024 Paradigm Pet Professionals.</p>
+        <small><a href="#">Privacy Policy</a> • <a href="contact.html">Contact Us</a></small>
+    </footer>
+</body>
+
+</html>

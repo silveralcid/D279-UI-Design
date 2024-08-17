@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Paradigm Pet Professionals</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        header {
+            background-color: #f8f8f8;
+            padding: 10px 0;
+            text-align: center;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        nav.container-fluid {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+        }
+
+        nav.container-fluid ul:first-child li strong {
+            color: #003366;
+            /* Dark blue color */
+            font-size: 1.25rem;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+
+        .main-content,
+        .sidebar {
+            margin-bottom: 20px;
+        }
+
+        .main-content {
+            flex: 0 1 65%;
+        }
+
+        .sidebar {
+            flex: 0 1 30%;
+            padding-left: 20px;
+        }
+
+        .image-placeholder {
+            width: 100%;
+            height: 500px;
+            background-color: #ccc;
+            margin-bottom: 20px;
+        }
+
+        h2,
+        h3 {
+            margin-bottom: 10px;
+        }
+
+        p {
+            margin-bottom: 15px;
+            line-height: 1.5;
+        }
+
+        footer {
+            background-color: #f8f8f8;
+            text-align: center;
+            padding: 10px 0;
+            border-top: 1px solid #e0e0e0;
+            font-size: 0.875rem;
+            position: relative;
+        }
+
+        footer p,
+        footer small {
+            margin: 5px 0;
+        }
+
+        .content-summary {
+            background-color: #e8e8e8;
+            padding: 10px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+        }
+
+        .content-summary h3,
+        .content-summary p {
+            color: #333333;
+            /* Darker font color for better readability */
+        }
+
+        .dropdown-menu {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+
+        nav ul li:hover .dropdown-menu {
+            display: block;
+        }
+
+        .dropdown-menu a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .dropdown-menu a:hover {
+            background-color: #f1f1f1;
+        }
+
+        .highlighted {
+            color: #ff0000;
+            /* Highlighted color for active page */
+        }
+
+        .microinteraction {
+            transition: background-color 0.3s ease;
+        }
+
+        .microinteraction:hover {
+            background-color: #f1f1f1;
+        }
+
+        .appointment-btn {
+            display: block;
+            text-align: center;
+            background-color: #007bff;
+            color: #ffffff;
+            padding: 10px;
+            margin-top: 20px;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+
+        .appointment-btn:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="container-fluid">
+            <ul>
+                <li><strong class="highlighted">Paradigm Pet Professionals</strong></li>
+            </ul>
+            <ul>
+                <li><a href="index.html" class="microinteraction">Home</a></li>
+                <li><a href="#" class="microinteraction">Pet Information</a>
+                    <div class="dropdown-menu">
+                        <a href="dogs.html">Dogs</a>
+                        <a href="cats.html">Cats</a>
+                        <a href="fish.html">Fish</a>
+                    </div>
+                </li>
+                <li><a href="contact.html" class="microinteraction">Schedule an Appointment</a></li>
+                <li><a href="about.html" class="microinteraction">About Us</a></li>
+                <li><a href="#" class="microinteraction" role="button">Search</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <div class="main-content">
+            <h2>Paradigm Pet Professionals</h2>
+            <h3>Evidence-based pet care advice for every pet lover.</h3>
+            <div class="content-summary">
+                <h3>Top Pet Care Tips</h3>
+                <p>Quick tips on how to care for your pets effectively. Here you’ll find the most important advice,
+                    summarized for easy reference.</p>
+            </div>
+            <img src="images/home.jpg" alt="Home Image" class="image-placeholder" />
+            <p>Providing excellent care for your pet is a rewarding experience that strengthens the bond between you and
+                your furry companion. When you prioritize your pet's health through proper nutrition, regular exercise,
+                and preventative veterinary care, you'll see the results in their vibrant energy and playful spirit. The
+                joy of watching your pet thrive under your care is unmatched.
+            </p>
+            <p>Whether it's seeing a rescue animal
+                blossom with trust and affection or witnessing your longtime companion maintain their vitality well into
+                their senior years!</p>
+        </div>
+
+        <aside class="sidebar">
+            <h3>Thinking about Adoption?</h3>
+            <p>Discover unconditional love and endless joy by adopting a pet today! When you open your heart and home to
+                a furry friend in need, you're not just gaining a companion – you're saving a life!</p>
+            <ul>
+                <li><a href="https://www.petfinder.com/">Pet Finder</a></li>
+                <li><a href="https://www.adoptapet.com/">Adopt A Pet</a></li>
+                <li><a href="https://www.rescueme.org/">Rescue Me</a></li>
+            </ul>
+            <a href="contact.html" class="appointment-btn">Schedule an Appointment</a>
+        </aside>
+    </main>
+
+    <footer>
+        <p>© 2024 Paradigm Pet Professionals.</p>
+        <small><a href="#">Privacy Policy</a> • <a href="contact.html">Contact Us</a></small>
+    </footer>
+</body>
+
+</html>
