@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Paradigm Pet Professionals</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        header {
+            background-color: #f8f8f8;
+            padding: 10px 0;
+            text-align: center;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        nav.container-fluid {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+        }
+
+        nav.container-fluid ul:first-child li strong {
+            color: #003366;
+            /* Dark blue color */
+            font-size: 1.25rem;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+
+        .main-content,
+        .sidebar {
+            margin-bottom: 20px;
+        }
+
+        .main-content {
+            flex: 0 1 65%;
+        }
+
+        .sidebar {
+            flex: 0 1 30%;
+            padding-left: 20px;
+        }
+
+        .image-placeholder {
+            width: 100%;
+            height: 250px;
+            background-color: #ccc;
+            margin-bottom: 20px;
+        }
+
+        h2,
+        h3 {
+            margin-bottom: 10px;
+        }
+
+        p {
+            margin-bottom: 15px;
+            line-height: 1.5;
+        }
+
+        footer {
+            background-color: #f8f8f8;
+            text-align: center;
+            padding: 10px 0;
+            border-top: 1px solid #e0e0e0;
+            font-size: 0.875rem;
+            position: relative;
+        }
+
+        footer p,
+        footer small {
+            margin: 5px 0;
+        }
+
+        .content-summary {
+            background-color: #e8e8e8;
+            padding: 10px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+        }
+
+        .content-summary h3,
+        .content-summary p {
+            color: #333333;
+            /* Darker font color for better readability */
+        }
+
+        .dropdown-menu {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+
+        nav ul li:hover .dropdown-menu {
+            display: block;
+        }
+
+        .dropdown-menu a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .dropdown-menu a:hover {
+            background-color: #f1f1f1;
+        }
+
+        .highlighted {
+            color: #ff0000;
+            /* Highlighted color for active page */
+        }
+
+        .microinteraction {
+            transition: background-color 0.3s ease;
+        }
+
+        .microinteraction:hover {
+            background-color: #f1f1f1;
+        }
+
+        .appointment-btn {
+            display: block;
+            text-align: center;
+            background-color: #007bff;
+            color: #ffffff;
+            padding: 10px;
+            margin-top: 20px;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+
+        .appointment-btn:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="container-fluid">
+            <ul>
+                <li><strong class="highlighted">Paradigm Pet Professionals</strong></li>
+            </ul>
+            <ul>
+                <li><a href="#" class="microinteraction">Home</a></li>
+                <li><a href="#" class="microinteraction">Pet Information</a>
+                    <div class="dropdown-menu">
+                        <a href="#">Dogs</a>
+                        <a href="#">Cats</a>
+                        <a href="#">Fish</a>
+                    </div>
+                </li>
+                <li><a href="#" class="microinteraction">Schedule an Appointment</a></li>
+                <li><a href="#" class="microinteraction">About Us</a></li>
+                <li><a href="#" class="microinteraction" role="button">Search</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <div class="main-content">
+            <h2>Paradigm Pet Professionals</h2>
+            <h3>Evidence-based pet care advice for every pet lover.</h3>
+            <div class="content-summary">
+                <h3>Top Pet Care Tips</h3>
+                <p>Quick tips on how to care for your pets effectively. Here you’ll find the most important advice,
+                    summarized for easy reference.</p>
+            </div>
+            <div class="image-placeholder"></div>
+            <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Nihil id porro tempora sunt. Impedit, eius, quas
+                perspiciatis magnam nisi officia eos placeat alias, consequatur voluptate illum exercitationem libero
+                molestiae animi?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam deleniti iure illum voluptas doloremque
+                recusandae inventore explicabo, vel error architecto quia odio fugit. Deserunt voluptatum nostrum,
+                facilis amet soluta itaque!</p>
+        </div>
+
+        <aside class="sidebar">
+            <h3>Thinking about Adoption?</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A rem nesciunt doloribus error provident maiores
+                est deleniti, corrupti quae fugiat amet!</p>
+            <ul>
+                <li><a href="#">Adoption Link</a></li>
+                <li><a href="#">Adoption Link</a></li>
+                <li><a href="#">Adoption Link</a></li>
+            </ul>
+            <a href="#" class="appointment-btn">Schedule an Appointment</a>
+        </aside>
+    </main>
+
+    <footer>
+        <p>© 2024 Paradigm Pet Professionals.</p>
+        <small><a href="#">Privacy Policy</a> • <a href="#">Contact Us</a></small>
+    </footer>
+</body>
+
+</html>
